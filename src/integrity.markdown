@@ -102,7 +102,8 @@ Heroku
           :export_directory => File.dirname(__FILE__) + "/tmp",
           :log              => File.dirname(__FILE__) + "/log/integrity.log",
           # Uncomment to setup a password
-          # :admin_usenrame   => "admin",
+          # :use_basic_auth   => true,
+          # :admin_username   => "admin",
           # :admin_password   => "foobar"
         }
 
