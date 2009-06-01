@@ -288,7 +288,7 @@ Basically, it's the same as for [database.yml](/#database-yml). See our
 [Rakefile](http://github.com/foca/integrity/blob/0.1.9/Rakefile#L16)
 for an example.
 
-Suport / Development {#support}
+Support / Development {#support}
 ====================
 
 [#integrity]: irc://irc.freenode.net:6667/integrity
