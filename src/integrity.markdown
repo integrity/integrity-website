@@ -253,7 +253,7 @@ repository: `/home/sr/code/integrity/.git`
 How do I use git submodules with Integrity? {#git-sub}
 -------------------------------------------
 
-Use this as your build command: `git submodules update --init && rake test`
+Use this as your build command: `git submodule update --init && rake test`
 It'll fetch and update the submodules everytime the project is build.
 
 How to handle database.yml and similar unversioned files? {#database-yml}
