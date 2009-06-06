@@ -183,15 +183,19 @@ After a build is finished, you want to know the status __immediately.__
 Integrity gives you a modular notification's system for this.
 
 With Integrity, you can receive your notifications in a few different ways.
-Don't worry, all of these are easy to set up:
+Currently, we maintain three notifiers:
 
 - [Email](http://github.com/integrity/integrity-email),
   by [Nicolás Sanguinetti][foca]
-- [Jabber](http://github.com/hukl/integrity-jabber),
-  by [Pier-Hugues Pellerin](http://heykimo.com)
 - [Campfire](http://github.com/integrity/integrity-campfire),
   by [Chris Wanstrath](http://ozmm.org)
 - [IRC](http://github.com/integrity/integrity-irc), by [Simon Rozet][sr]
+
+There are other available notifiers as well, but we do not maintain them,
+which mean they might not work.
+
+- [Jabber](http://github.com/hukl/integrity-jabber),
+  by [Pier-Hugues Pellerin](http://heykimo.com)
 - [Twitter](http://github.com/cwsaylor/integrity-twitter),
   by [Chris Saylor](http://justhack.com)
 - [Basecamp](http://github.com/pyrat/integrity-basecamp), by
