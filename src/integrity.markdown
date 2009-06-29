@@ -24,19 +24,14 @@ Installation and deployment {#setup}
 ===========================
 
 __It's ridiculously easy.__ All you need is to have `ruby` and `rubygems`
-installed on your server, and then run the built-in installer.
+installed on your server, and then run the built-in installer and follow the
+instructions.
 
     $ gem install integrity
     $ integrity install /home/www-data/integrity
 
 This will create a couple files on your server,
 mainly `config.yml` and `config.ru`.
-
-You may encounter an error suggesting that `integrity_projects` table is
-missing in-spite of the output of the install command above; in that
-case try the following:
-
-    $ integrity migrate_db config.yml
 
 The installer provides special configuration files for [Thin][]
 and [Passenger][].
