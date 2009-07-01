@@ -284,7 +284,7 @@ How do I use metric\_fu ? {#metricfu}
 ------------------------
 
 Basically, it's the same as for [database.yml](/#database-yml). See our
-[Rakefile](http://github.com/foca/integrity/blob/0.1.9/Rakefile#L16)
+[Rakefile](http://github.com/integrity/integrity/blob/0.1.9/Rakefile#L16)
 for an example.
 
 Support / Development {#support}
@@ -302,10 +302,10 @@ If you want to check out the code, you can do so at our [GitHub project][src]
 [configure]: /#configure
 [notifiers]: /#notifiers
 [demo]: http://builder.integrityapp.com
-[src]: http://github.com/foca/integrity
+[src]: http://github.com/integrity/integrity
 [lighthouse]: http://integrity.lighthouseapp.com
 [ml]: http://groups.google.com/group/integrityapp
-[configsrc]: http://github.com/foca/integrity/blob/3d1ba4b8cde7241dacd641eb40e9f26c49fbea35/config/config.sample.yml
+[configsrc]: http://github.com/integrity/integrity/blob/3d1ba4b8cde7241dacd641eb40e9f26c49fbea35/config/config.sample.yml
 [Thin]: http://code.macournoyer.com/thin
 [Passenger]: http://www.modrails.com/
 [nginx]: http://nginx.net
