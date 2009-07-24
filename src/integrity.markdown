@@ -241,6 +241,18 @@ Slightly longer answer: as long as your build process can be run from an unix-y
 environment __and__ it returns a *zero* status code for
 success and _non-zero_ for failure, then integrity works for you.
 
+Why does Integrity still require Rack pre 1.0? {#rack10}
+----------------------------------------------
+
+We depend on Rack through Sinatra. The latest release of Sinatra (0.9.2) does
+depends on Rack 1.0 but there unfortunately is a bug that affects Integrity.
+It was [fixed], and even [released] as part of Sinatra 0.9.3 but not published
+on RubyForge. Which is why Integrity depends on Sinatra 0.9.2 and hence,
+on Rack 0.9.2.
+
+[fixed]: http://github.com/sinatra/sinatra/commit/68d5dc1a76f3bfedecca4fa93b069c4be868566c
+[released]: http://github.com/sinatra/sinatra/commit/798ca32d2410477774fe6e1576ebd6b5f7d8517e
+
 How to use Integrity with a local repository? {#local}
 ---------------------------------------------
 
