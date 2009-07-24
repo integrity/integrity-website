@@ -257,10 +257,9 @@ It'll fetch and update the submodules everytime the project is build.
 
 How to handle database.yml and similar unversioned files? {#database-yml}
 ---------------------------------------------------------
-__Integrity is dumb__. it takes a repository URL and a command to run in a
-working copy of the former.
-It then reports success or failure depending on the [exit status][exit] of the
-command.
+Integrity is dumb. it takes a repository URL and a command to run in a
+working copy of the former. It then reports success or failure depending on
+the [exit status][exit] of the command.
 
 While this is very simplistic, it allows for great flexibility: you can use
 whatever you want as the build command.
