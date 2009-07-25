@@ -241,34 +241,21 @@ Slightly longer answer: as long as your build process can be run from an unix-y
 environment __and__ it returns a *zero* status code for
 success and _non-zero_ for failure, then integrity works for you.
 
-Why does Integrity still require Rack pre 1.0? {#rack10}
-----------------------------------------------
+How do I use metric\_fu with Integrity? {#metricfu}
+---------------------------------------
 
-We depend on Rack through Sinatra. The latest release of Sinatra (0.9.2) does
-depends on Rack 1.0 but there unfortunately is a bug that affects Integrity.
-It was [fixed], and even [released] as part of Sinatra 0.9.3 but not published
-on RubyForge. Which is why Integrity depends on Sinatra 0.9.2 and hence,
-on Rack 0.9.2.
+Use [Nick Quaranto][qrush]'s [report\_card][] which provide automatic
+building and reporting to Campfire of metrics with metric\_fu through
+Integrity.
 
-[fixed]: http://github.com/sinatra/sinatra/commit/68d5dc1a76f3bfedecca4fa93b069c4be868566c
-[released]: http://github.com/sinatra/sinatra/commit/798ca32d2410477774fe6e1576ebd6b5f7d8517e
+Checkout the [demo](http://metrics.thoughtbot.com/) if you're not convinced.
 
-How to use Integrity with a local repository? {#local}
----------------------------------------------
-
-Set the project URI's to point to the `.git` directory of the
-repository: `/home/sr/code/integrity/.git`
-
-[git-sub]: http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html
-
-How do I use git submodules with Integrity? {#git-sub}
--------------------------------------------
-
-Use this as your build command: `git submodule update --init && rake test`
-It'll fetch and update the submodules everytime the project is build.
+[qrush]: http://litanyagainstfear.com
+[report_card]: http://gthub.com/thoughtbot/report_card
 
 How to handle database.yml and similar unversioned files? {#database-yml}
 ---------------------------------------------------------
+
 Integrity is dumb. it takes a repository URL and a command to run in a
 working copy of the former. It then reports success or failure depending on
 the [exit status][exit] of the command.
@@ -291,17 +278,33 @@ Or use a Rake task. Example:
       end
     end
 
-How do I use metric\_fu with Integrity? {#metricfu}
----------------------------------------
+How do I use git submodules with Integrity? {#git-sub}
+-------------------------------------------
 
-Use [Nick Quaranto][qrush]'s [report\_card][] which provide automatic
-building and reporting to Campfire of metrics with metric\_fu through
-Integrity.
+Use this as your build command: `git submodule update --init && rake test`
+It'll fetch and update the submodules everytime the project is build.
 
-Checkout the [demo](http://metrics.thoughtbot.com/) if you're not convinced.
+How to use Integrity with a local repository? {#local}
+---------------------------------------------
 
-[qrush]: http://litanyagainstfear.com
-[report_card]: http://gthub.com/thoughtbot/report_card
+Set the project URI's to point to the `.git` directory of the
+repository: `/home/sr/code/integrity/.git`
+
+[git-sub]: http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html
+
+Why does Integrity still require Rack pre 1.0? {#rack10}
+----------------------------------------------
+
+We depend on Rack through Sinatra. The latest release of Sinatra (0.9.2) does
+depends on Rack 1.0 but there unfortunately is a bug that affects Integrity.
+It was [fixed], and even [released] as part of Sinatra 0.9.3 but not published
+on RubyForge. Which is why Integrity depends on Sinatra 0.9.2 and hence,
+on Rack 0.9.2.
+
+[fixed]: http://github.com/sinatra/sinatra/commit/68d5dc1a76f3bfedecca4fa93b069c4be868566c
+[released]: http://github.com/sinatra/sinatra/commit/798ca32d2410477774fe6e1576ebd6b5f7d8517e
+
+
 
 Support / Development {#support}
 ====================
