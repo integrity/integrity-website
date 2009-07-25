@@ -292,7 +292,7 @@ repository: `/home/sr/code/integrity/.git`
 
 [git-sub]: http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html
 
-Why does Integrity still require Rack pre 1.0? {#rack10}
+Why does Integrity still requires Rack pre 1.0? {#rack10}
 ----------------------------------------------
 
 We depend on Rack through Sinatra. The latest release of Sinatra (0.9.2) does
