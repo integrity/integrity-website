@@ -291,12 +291,17 @@ Or use a Rake task. Example:
       end
     end
 
-How do I use metric\_fu ? {#metricfu}
-------------------------
+How do I use metric\_fu with Integrity? {#metricfu}
+---------------------------------------
 
-Basically, it's the same as for [database.yml](/#database-yml). See our
-[Rakefile](http://github.com/integrity/integrity/blob/0.1.9/Rakefile#L16)
-for an example.
+Use [Nick Quaranto][qrush]'s [report\_card][] which provide automatic
+building and reporting to Campfire of metrics with metric\_fu through
+Integrity.
+
+Checkout the [demo](http://metrics.thoughtbot.com/) if you're not convinced.
+
+[qrush]: http://litanyagainstfear.com
+[report_card]: http://gthub.com/thoughtbot/report_card
 
 Support / Development {#support}
 ====================
