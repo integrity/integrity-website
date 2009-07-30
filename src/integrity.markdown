@@ -30,8 +30,13 @@ instructions.
     $ gem install integrity
     $ integrity install /home/www-data/integrity
 
-This will create a couple files on your server,
-mainly `config.yml` and `config.ru`.
+This will create a couple files on your server, mainly `config.yml`
+and `config.ru`. Then, edit `config.yml` to your liking and run
+`integrity migrate_db config.yml` to create the database.
+
+**NOTE:** Currently, only SQLite3 is supported. Please see ticket
+[#92](http://integrity.lighthouseapp.com/projects/14308/tickets/92) for
+details.
 
 The installer provides special configuration files for [Thin][]
 and [Passenger][].
