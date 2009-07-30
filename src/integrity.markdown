@@ -228,6 +228,24 @@ Or use a Rake task. Example:
       end
     end
 
+My project won't build! {#error}
+-----------------------
+
+The most common causes are:
+
+* You've installed `foca-integrity` (directly or via an outdated notifier). If
+  so, uninstall it or make sure the `integrity` gem is loaded.
+
+* The build directory isn't writeable by the user that runs Integrity.
+
+* `git` isn't in said user's `PATH`.
+
+* If you're trying to build a private repository (`git@example.org:repo.git`
+  for example), be sure to setup [ssh-agent] or [keychain][].
+
+[keychain]: http://www.gentoo.org/proj/en/keychain/
+[ssh-agent]: http://en.wikipedia.org/wiki/Ssh-agent
+
 How do I use git submodules with Integrity? {#git-sub}
 -------------------------------------------
 
