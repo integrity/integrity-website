@@ -260,6 +260,25 @@ repository: `/home/sr/code/integrity/.git`
 
 [git-sub]: http://www.kernel.org/pub/software/scm/git/docs/git-submodule.html
 
+Related projects and external resources {#ecosystem}
+=======================================
+
+* [Integrity Menu](http://integrity-menu.com) -- a dashboard widget for Mac OS X
+  that shows the current status of projects being managed by Integrity.
+* [Integritray](http://github.com/jfrench/integritray) -- Adds a
+  CruiseControl.rb-style XML feed to Integrity (integrityapp.com) for use with
+  CCMenu and other tray items.
+* [report\_card](http://giantrobots.thoughtbot.com/2009/7/24/enforcer-and-report_card) --
+  metrics for Integrity.
+
+* [Continuous Integration Testing for Ruby on Rails with Integrity](http://elabs.se/blog/7-continuous-integration-testing-for-ruby-on-rails-with-integrity)
+* [Local Continuous Integration with Integrity](http://morethanseven.net/2008/12/28/local-continuous-integration-integrity/)
+* [Integrity CI on Passenger 2.2.2 with Ruby Enterprise Edition on Ubuntu 8.04](http://blog.smartlogicsolutions.com/2009/04/26/integrity-ci-on-passenger-222-with-ruby-enterprise-edition-on-ubuntu-804/)
+* [deploy Integrity CI with deprec](http://deprec.failmode.com/2009/03/17/deploy-integrity-ci-with-deprec/)
+
+Please feel free to [fork](http://github.com/integrity/integrity-website) this
+website and add your project, article, etc to this list.
+
 Support / Development {#support}
 ====================
 
