@@ -201,7 +201,7 @@ Integrity.
 Checkout the [demo](http://metrics.thoughtbot.com/) if you're not convinced.
 
 [qrush]: http://litanyagainstfear.com
-[report_card]: http://gthub.com/thoughtbot/report_card
+[report_card]: http://github.com/thoughtbot/report_card
 
 How to handle database.yml and similar unversioned files? {#database-yml}
 ---------------------------------------------------------
