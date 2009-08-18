@@ -44,7 +44,7 @@ and [Passenger][].
 Passenger
 ---------
 
-    $ integrity install --passenger ~www-data/integrity
+    $ integrity install ~www-data/integrity --passenger
     $ cd ~www-data/integrity
 
 Then, tell Passenger to start your app: `$ touch tmp/restart.txt`
