@@ -139,6 +139,8 @@ Currently, we maintain three notifiers:
 There are other available notifiers as well, but we do not maintain them,
 which mean they might not work.
 
+- [Tumblr](http://github.com/matflores/integrity-tumblr),
+  by [Matías A. Flores](http://matflores.com)
 - [Jabber](http://github.com/hukl/integrity-jabber),
   by [Pier-Hugues Pellerin](http://heykimo.com)
 - [Twitter](http://github.com/cwsaylor/integrity-twitter),
@@ -147,6 +149,11 @@ which mean they might not work.
   [Alastair Brunton](http://www.simplyexcited.co.uk)
 - [Yammer](http://github.com/jstewart/integrity-yammer/tree), by
   [Jason Stewart](http://github.com/jstewart)
+
+If you'd like to write a notifier, checkout [this guide][howto] by
+[Matías A. Flores](http://matflores.com) which explains it all.
+
+[howto]: http://matflores.com/2009/09/21/continuous-notification-with-integrity.html
 
 **NOTE:** If you wrote a notifier for something else, let us know at
 <info@integrityapp.com> and we'll add you here :)
