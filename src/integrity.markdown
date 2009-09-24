@@ -151,12 +151,11 @@ which mean they might not work.
   [Jason Stewart](http://github.com/jstewart)
 
 If you'd like to write a notifier, checkout [this guide][howto] by
-[Matías A. Flores](http://matflores.com) which explains it all.
+[Matías A. Flores](http://matflores.com) which explains it all. Be sure to
+[let us know](mailto:info@integrityapp.com) when you're done and we'll add you
+here :)
 
 [howto]: http://matflores.com/2009/09/21/continuous-notification-with-integrity.html
-
-**NOTE:** If you wrote a notifier for something else, let us know at
-<info@integrityapp.com> and we'll add you here :)
 
 Setting up your notifier {#setup-notifier}
 ------------------------
