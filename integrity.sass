@@ -35,8 +35,15 @@ a
     :color = !link_bg
     :background-color = !link_color
 
-ul ul
-  :padding-left 1em
+ul
+  :padding-left 2em
+  li
+    :list-style-type disc
+ol
+  :padding-left 1.5em
+  li
+    :list-style-type decimal
+
 
 #header, #nav, #content, #footer
   :width 40em
@@ -109,7 +116,7 @@ ul ul
       :bottom .75em
     :line-height 1.2
     :text-align right
-    :border-bottom = 1px solid !rule_color
+    :border-bottom = 1px "solid" !rule_color
     span
       :position relative
       :top .25em
@@ -134,10 +141,13 @@ ul ul
     :display blog
     :margin .5em 0
     :padding 1em
-    :border = 1px solid !rule_color
+    :border = 1px "solid" !rule_color
     :background = !code_bg
     :color = !code_color
-
+  p code
+    :font-weight bold
+  li code
+    :font-weight bold
   p
     :margin .6em 0
 

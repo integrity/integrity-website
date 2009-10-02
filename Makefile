@@ -1,8 +1,12 @@
-all: clean index.html stylesheets/integrity.css
-index.html: src/integrity.markdown
-	./src/htmlize src/integrity.markdown > index.html
-stylesheets/integrity.css: src/integrity.sass
-	sass src/integrity.sass stylesheets/integrity.css
+#all: clean index.html
+index.html: README.md stylesheet/integrity.css
+	@./htmlize README.md > $@
+README.md:
+	@wget http://github.com/integrity/integrity/raw/8a39afd504b53b39bf873d7c402a266fb69960f2/README.md
+stylesheet/integrity.css: integrity.sass
+	@sass integrity.sass $@
 clean:
-	rm index.html || true
-	rm stylesheets/integrity.css || true
+	@rm -rf .sass-cache
+	@rm -f README.md
+	@rm -f index.html
+	@rm -f integrity.css
